@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 1 - Construction Monitoring | Rushikesh Thanekar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="projectPages.css">
+  <link rel="shortcut icon" href="ProjectImages/icon.png" type="image/x-icon">
+
+
+</head>
+<body>
+
+  <div class="header">
+    <h1>Project 1: Digital Twin for Construction Monitoring</h1>
+    <p>Showcasing real-time 3D monitoring system for PMRDA using CesiumJS</p>
+  </div>
+
+  <div class="content">
+    <div class="section-title">Project Overview</div>
+    <table class="info-table">
+
+      <tr>
+        <td>Technologies Used</td>
+        <td>CesiumJS, Cesium Ion, Google Sheets API, JavaScript, Speckle, Point Cloud</td>
+      </tr>
+    </table>
+
+    <div class="description">
+<p>To address the challenge faced by PMRDA in tracking the construction progress of 47 buildings—previously managed through static PDF reports—we delivered an interactive Digital Twin solution that offers real-time visual monitoring and data insights.</p>
+
+    <p>We created a centralized Google Sheet, shared with all stakeholders, where the construction company updates the status of each building:</p>
+    <ul>
+      <li>Building name</li>
+      <li>Number of floors completed</li>
+      <li>Floors currently in progress</li>
+    </ul>
+
+    <p>Using CesiumJS, we developed a georeferenced 3D digital twin of the entire construction site. Each building floor (up to 14 floors) was modeled and uploaded to Cesium Ion. The system automatically fetches data from the Google Sheet and displays the 3D progress dynamically on the site map—accurately showing completed floors on each building based on live updates.</p>
+
+    <h4>Additional Features:</h4>
+    <ul>
+      <li><strong>📊 Interactive Dashboard</strong>
+        <ul>
+          <li>Pie chart showing physical progress</li>
+          <li>Cost utilization visualized from a separate cost-tracking sheet</li>
+          <li>Bar chart displaying per-building progress percentages and in-progress status</li>
+        </ul>
+      </li>
+      <li><strong>🖼️ Project Gallery & Image Insights</strong>
+        <ul>
+          <li>Pop-up window with project images and key details for each building</li>
+        </ul>
+      </li>
+      <li><strong>🛰️ Reality vs. Plan Validation</strong>
+        <ul>
+          <li>Superimposed point cloud data over the digital twin to compare “as-built” vs “as-planned” status</li>
+        </ul>
+      </li>
+      <li><strong>🔗 Speckle Integration for Collaboration</strong>
+        <ul>
+          <li>Linked detailed engineering models per building</li>
+          <li>Tools for measurements, annotations like “please change railing height,” and image uploads</li>
+          <li>Accessible to all engineers for collaborative review and updates</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>This solution enabled PMRDA to monitor construction progress in an intuitive, visual format, reducing manual effort, improving accuracy, and enhancing communication between stakeholders.</p>
+    </div>
+
+    <div class="section-title">Project Demo</div>
+    <div class="video-wrapper">
+      <img src="ProjectImages/DigitilTwn1.png" alt="Web3D" class="img-fluid mb-4" />
+      <img src="ProjectImages/DigitilTwn2.png" alt="Web3D" class="img-fluid mb-4" />
+      <img src="ProjectImages/DigitilTwn3.png" alt="Web3D" class="img-fluid mb-4" />
+      <img src="ProjectImages/DigitilTwn4.png" alt="Web3D" class="img-fluid mb-4" />
+      <img src="ProjectImages/DigitilTwn5.png" alt="Web3D" class="img-fluid mb-4" />
+    </div>
+  </div>
+
+</body>
+</html>

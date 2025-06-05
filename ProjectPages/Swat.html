@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 2 - Rainfall-Runoff and Flood Simulation | Rushikesh Thanekar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="projectPages.css">
+  <link rel="shortcut icon" href="ProjectImages/icon.png" type="image/x-icon">
+
+
+</head>
+<body>
+
+  <div class="header">
+    <h1>Project 2: Rainfall-Runoff and Flood Simulation – Wadachiwadi, PMRDA</h1>
+    <p>Urban hydrology modeling and 2D flood simulation using SWAT and TUFLOW</p>
+  </div>
+
+  <div class="content">
+    <div class="section-title">Project Overview</div>
+    <table class="info-table">
+      <tr>
+        <td>Technologies Used</td>
+        <td>QSWAT+, MapSWAT, Google Earth Engine (GEE), TUFLOW, DEM, LULC, Soil Data</td>
+      </tr>
+    </table>
+
+    <div class="description">
+
+        <p>
+          This project aimed to evaluate the hydrological behavior and flood vulnerability of the Wadachiwadi town planning area under PMRDA (Pune Metropolitan Region Development Authority). We performed a comprehensive rainfall-runoff analysis using the SWAT (Soil and Water Assessment Tool) model, which simulates the impact of land use, soil properties, topography, and climate on watershed hydrology.
+        </p>
+        <p>
+          To begin, we delineated the watershed and created Hydrological Response Units (HRUs) using input datasets such as soil maps, land use/land cover (LULC), and Digital Elevation Models (DEM). These datasets were accessed through MapSWAT, a tool that utilizes Google Earth Engine (GEE) to gather spatially accurate environmental data.
+        </p>
+        <p>
+          Once the watershed was configured in SWAT, we simulated rainfall-runoff patterns to understand how water moves across the landscape during storm events. The model helped estimate surface runoff, infiltration, and flow accumulation, giving insight into how different sub-basins contribute to the total runoff.
+        </p>
+        <p>
+          To assess flood risks and visualize potential flood spread, we used TUFLOW, a 2D hydraulic modeling software. By inputting runoff data from SWAT into TUFLOW, we simulated how water would propagate over the terrain during heavy rainfall events. This helped identify low-lying and flood-prone zones, providing a visual representation of flood impact areas.
+        </p>
+        <p>
+          The combination of SWAT and TUFLOW models enabled us to create a realistic and spatially accurate assessment of flood risks. The results of this study offer valuable guidance for urban development, infrastructure planning, and disaster management strategies in the Wadachiwadi region.
+        </p>
+
+    </div>
+
+    <div class="section-title">Project Demo</div>
+    <div class="video-wrapper">
+      <img src="ProjectImages/swat1.png" alt="Swat" class="img-fluid mb-4" />
+      <img src="ProjectImages/swat2.png" alt="Swat" class="img-fluid mb-4" />
+      <img src="ProjectImages/swat3.png" alt="Swat" class="img-fluid mb-4" />
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+    .navbar {
+      background-color: #f8f9fa;
+    }
+    
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background-color: #f2f2f2;
+      animation: fadeIn 2s ease-in-out;
+      background: url('images/BM.png') center center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      animation: slideDown  1.5s ease-in-out 1;
+    }
+    #skills, #contact{
+      background: url('images/BM.png') center center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+
+    .video-wrapper {
+    position: relative;
+    cursor: pointer;
+    }
+
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .progress-bar {
+      background-color: #000;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      background-color: #f9f9f9;
+      color: #000;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 1rem;
+    }
+    .carousel-inner img {
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    @media (max-width: 767px) {
+      .hero {
+        padding: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .carousel-inner img {
+        max-height: 250px;
+      }
+    }
